@@ -130,7 +130,7 @@
 #about-me {
     padding: 50px 0;
     background-image: url(./assets/about.jpg);
-    background: cover;
+    background: cover,transparent;
     color: white;
     width: 100%;
     
