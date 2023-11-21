@@ -134,6 +134,7 @@
     color: white;
     width: 100%;
     
+    
 }
 
 #about-me h2 {
@@ -311,6 +312,9 @@
     font-size: 16px;
     letter-spacing: 1px;
     transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #contact:hover {
