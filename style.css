@@ -302,46 +302,85 @@
 }
 
 #contact {
-    background-color:#090909;
-    height: 100vh;
+    background-color:#1f242d;
+    min-height: 100vh;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
-    border: 2px solid black;
     text-transform: uppercase;
     font-size: 16px;
     letter-spacing: 1px;
-    transition: all 0.3s ease-in-out;
+    /* transition: all 0.3s ease-in-out; */
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    flex-basis: auto;
-}
-
-#contact:hover {
-    background-color: #111111;
-    color: #0a0a0a;
-    color: white;
-}
-
-#contact,textarea{
-    border-radius: 5px;
-    width: 100%;
-}
-
-
-#btn{
-    padding: 10px 20px;
-    border-radius: 5px;
-    background-color: #f1f7f7; 
-    font-weight: bold; 
-}
-
-#btn:hover{
-    background-color: rgb(29, 234, 237);
-    font-weight: bold;
     
 }
+
+ #contact h2{
+ font-size: 40px;
+ margin-top: 0px;
+  
+} 
+
+.contact form{
+    width: 600px;
+    text-align: center;
+   
+   
+}
+
+form .input-box{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(81, 78, 78);
+}
+
+.input-box .input-field{
+   width: 100%;
+}
+.field .item{
+    width: 100%;
+    padding: 18px;
+    background: transparent;
+    border: 2px solid #0ef;
+    outline: none;
+    border-radius: 6px;
+    color: rgb(37, 35, 35);
+    margin: 5px 0px;
+    font-size: 16px
+}
+
+.field .item::placeholder{
+    color: rgba(255, 255, 255, .3);
+}
+
+form .textarea-field .item{
+    resize: none;
+}
+
+form button{
+    padding: 12px 32px;
+    background: #0ef;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #0ef;
+    font-size: 16px;
+    color: #333;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: .5s;
+}
+
+form button:hover{
+    box-shadow: none
+}
+
 
 #social-media {
     background-color: transparent;
@@ -401,15 +440,3 @@
     color: yellow;
 }
 
-input{
-    display: flex;
-    flex-direction: row;
-    width: 18rem;
-}
-
-.lable{
-display: flex;
-flex-direction: column;
-
-
-}
