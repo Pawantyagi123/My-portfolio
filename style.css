@@ -315,6 +315,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-basis: auto;
 }
 
 #contact:hover {
@@ -400,3 +401,15 @@
     color: yellow;
 }
 
+input{
+    display: flex;
+    flex-direction: row;
+    width: 18rem;
+}
+
+.lable{
+display: flex;
+flex-direction: column;
+
+
+}
