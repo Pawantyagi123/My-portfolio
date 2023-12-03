@@ -307,7 +307,6 @@
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
-    text-transform: uppercase;
     font-size: 16px;
     letter-spacing: 1px;
     /* transition: all 0.3s ease-in-out; */
@@ -327,15 +326,14 @@
 
 .contact form{
     width: 600px;
-    text-align: center;
-   
-   
+    text-align: center;   
 }
 
 form .input-box{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    color: rgb(81, 78, 78);
+    color: rgb(10, 10, 10);
 }
 
 .input-box .input-field{
@@ -348,7 +346,7 @@ form .input-box{
     border: 2px solid #0ef;
     outline: none;
     border-radius: 6px;
-    color: rgb(37, 35, 35);
+    color: rgb(244, 238, 238);
     margin: 5px 0px;
     font-size: 16px
 }
@@ -374,11 +372,24 @@ form button{
     font-weight: 600;
     cursor: pointer;
     margin-top: 20px;
+    margin-left: 30px;
     transition: .5s;
 }
 
 form button:hover{
     box-shadow: none
+}
+
+.field .error-text{
+    font-size: 14.5px;
+    color: #d93025;
+    margin: -5px 0 10px;
+    text-align: left;
+    display: none;
+}
+
+form .textarea-field .error-text{
+    margin-top: -10px;
 }
 
 
