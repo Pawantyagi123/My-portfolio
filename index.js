@@ -74,7 +74,7 @@ function checkEmail() {
     }
   }
   else {
-    email.classList.remove(error);
+    email.classList.remove("error");
     email.parentElement.classList.remove("error");
   }
 }
@@ -88,3 +88,5 @@ form.addEventListener("submit", (e) =>{
   }
   sendEmail ();
 });
+
+
