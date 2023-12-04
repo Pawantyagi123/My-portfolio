@@ -20,7 +20,7 @@ function sendEmail () {
       if (message == "ok"){
         Swal.fire({
           title: "Success!",
-          text: "Message sent succesfully!",
+          text: "Message sent successfully!",
           icon: "success"
           });
         }
@@ -84,9 +84,9 @@ form.addEventListener("submit", (e) =>{
   checkInputs();
 
   if (!fullname.classList.contains("error") && !email.classList.contains("error") && !phone.classList.contains("error") && !subject.classList.contains("error") && !message.classList.contains("error")) {
-    console.log("OK");
+    sendEmail ();
   }
-  sendEmail ();
+  
 });
 
 
