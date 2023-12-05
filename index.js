@@ -89,4 +89,17 @@ form.addEventListener("submit", (e) =>{
   
 });
 
+const toggle = document.querySelector(".navbar-toggler-icon");
+toggle.addEventListener('click', function(){
+  let navbar = document.getElementById('navbarNav');
+  navbar.style.display='block';
+ 
+});
+
+const collapse = document.querySelector(".collapse navbar-collapse");
+
+collapse.addEventListener('click', function(){
+  let navbar = document.getElementById('navbarNav');
+  navbar.style.display='';
+})
 

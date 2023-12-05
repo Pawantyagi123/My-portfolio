@@ -37,11 +37,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   z-index: -1;
   font-family: "Playfair Display", serif;
   -webkit-animation: color-change-2x 2s linear infinite alternate both;
   animation: color-change-2x 2s linear infinite alternate both;
+  
 }
 
 @keyframes color-change-2x {
