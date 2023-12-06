@@ -41,7 +41,6 @@
   font-family: "Playfair Display", serif;
   -webkit-animation: color-change-2x 2s linear infinite alternate both;
   animation: color-change-2x 2s linear infinite alternate both;
-  
 }
 
 @keyframes color-change-2x {
@@ -62,9 +61,11 @@
   font-size: clamp(24px, 5vw, 48px);
   margin-bottom: 10px;
   color: rgb(242, 79, 79);
-  -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+  /* -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     both;
-  animation: text-pop-up-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: text-pop-up-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; */
+  background-color: rgba(15, 15, 15, 0.489);
+  backdrop-filter: blur(5px);
 }
 
 @keyframes text-pop-up-top {
@@ -104,8 +105,8 @@
 }
 
 #home a:hover {
-  background-color: #20dbec;
-  color: #0a0a0a;
+  background-color: #20dbec7e;
+  color: #f5eeee;
 }
 
 @keyframes font-animation {
@@ -128,6 +129,12 @@
   background: cover;
   color: white;
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+ 
+  text-align: center;
 }
 
 #about-me h2 {
@@ -395,11 +402,13 @@ form .textarea-field .error-text {
   background-color: transparent;
   padding: 20px;
   margin-top: 20px;
+  height: 60px;
 }
 
 #social-media ul {
   list-style-type: none;
   padding: 0;
+float: right;
 }
 
 #social-media li {
