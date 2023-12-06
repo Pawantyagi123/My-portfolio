@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400;1,500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;800&family=Kanit:ital,wght@0,600;1,400;1,500&family=Playfair+Display:ital,wght@0,600;1,400;1,500&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -66,6 +67,7 @@
   animation: text-pop-up-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; */
   background-color: rgba(15, 15, 15, 0.489);
   backdrop-filter: blur(5px);
+  border-radius: 50px;
 }
 
 @keyframes text-pop-up-top {
@@ -139,13 +141,18 @@
 
 #about-me h2 {
   font-size: 36px;
-  color: #f8f5f5;
+  background-color: rgba(255, 255, 255, 0.371);
+  color: #f8f5f5f6;
+  backdrop-filter: blur(5px);
   text-align: center;
   margin-bottom: 50px;
+  font-family: 'Playfair Display', serif;
+  border-radius: 50px;
+  padding: 5px 0px 5px 0px;
 }
-
-#about-me .row {
-  align-items: center;
+#about-me p{
+  text-overflow: ellipsis;
+  font-family: 'EB Garamond', serif;
 }
 
 #about-me img {
@@ -187,7 +194,6 @@
 
 #services {
   padding: 50px 0;
-  background-color: #f8f4f4;
   -webkit-animation: color-change-2x 2s linear infinite alternate both;
   animation: color-change-2x 2s linear infinite alternate both;
 }
@@ -197,10 +203,17 @@
   color: #333;
   text-align: center;
   margin-bottom: 30px;
+  background-color: rgba(110, 34, 34, 0.449);
+  backdrop-filter: blur(5px);
+  border-radius: 50px;
 }
 
 #services .row {
   align-items: center;
+}
+
+#services p{
+  font-family: 'Playfair Display', serif;
 }
 
 #services .card {
@@ -270,7 +283,8 @@
 
 #projects {
   padding: 50px 0;
-  background-color: #e5b5b5;
+  background-color: #ec2d2d74;
+ 
 }
 
 #projects h2 {
@@ -278,12 +292,13 @@
   color: #333;
   text-align: center;
   margin-bottom: 50px;
+  background-color: rgba(101, 30, 30, 0.434);
+  backdrop-filter: blur(5px);
+  border-radius: 50px;
 }
 
-
-
 .portfolio-item {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .portfolio-item img {
@@ -295,12 +310,15 @@
   font-size: 24px;
   color: #333;
   margin-top: 20px;
+  text-align: center;
 }
 
 .portfolio-item p {
   font-size: 16px;
   color: #777;
   margin-top: 10px;
+  text-align: center;
+
 }
 
 #contact {
@@ -323,6 +341,10 @@
 #contact h2 {
   font-size: 40px;
   margin-top: 0px;
+  background-color: #676e7c4c;
+  backdrop-filter: blur(5px);
+  border-radius: 50px;
+  padding: 10px 10px;
 }
 
 #contact form {
