@@ -40,22 +40,15 @@
   align-items: center;
   z-index: -1;
   font-family: "Playfair Display", serif;
-  -webkit-animation: color-change-2x 2s linear infinite alternate both;
-  animation: color-change-2x 2s linear infinite alternate both;
+  background: rgba(0, 0, 0, 0.2) url("assets/home3.jpg");
+  background-size: cover;
 }
 
-@keyframes color-change-2x {
-  0% {
-    background: #19dcea;
-  }
-  100% {
-    background: #b22cff;
-  }
-}
 
 #home .container {
   position: relative;
-  top: 90px;
+  top: 80px;
+  
 }
 
 #home h1 {
@@ -132,16 +125,14 @@
   color: white;
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   flex-direction: column;
   justify-content: center;
- 
   text-align: center;
 }
 
 #about-me h2 {
   font-size: 36px;
-  background-color: rgba(255, 255, 255, 0.371);
   color: #f8f5f5f6;
   backdrop-filter: blur(5px);
   text-align: center;
@@ -149,6 +140,7 @@
   font-family: 'Playfair Display', serif;
   border-radius: 50px;
   padding: 5px 0px 5px 0px;
+  width: 300px;
 }
 #about-me p{
   text-overflow: ellipsis;
@@ -194,8 +186,7 @@
 
 #services {
   padding: 50px 0;
-  -webkit-animation: color-change-2x 2s linear infinite alternate both;
-  animation: color-change-2x 2s linear infinite alternate both;
+  background-color: rgba(7, 7, 7, 0.7);
 }
 
 #services h2 {
@@ -203,8 +194,6 @@
   color: #333;
   text-align: center;
   margin-bottom: 30px;
-  background-color: rgba(110, 34, 34, 0.449);
-  backdrop-filter: blur(5px);
   border-radius: 50px;
 }
 
@@ -283,17 +272,16 @@
 
 #projects {
   padding: 50px 0;
-  background-color: #ec2d2d74;
+  background: rgba(24, 23, 23, 0.7) url(/assets/proj.jpg);
+  background-size: cover;
  
 }
 
 #projects h2 {
   font-size: 50px;
-  color: #333;
+  color: #0a0a0a;
   text-align: center;
   margin-bottom: 50px;
-  background-color: rgba(101, 30, 30, 0.434);
-  backdrop-filter: blur(5px);
   border-radius: 50px;
 }
 
@@ -419,20 +407,20 @@ form .textarea-field .error-text {
   margin-top: -10px;
 }
 
-#social-media {
+.social-media {
   background-color: transparent;
   padding: 20px;
   margin-top: 20px;
   height: 60px;
 }
 
-#social-media ul {
+.social-media ul {
   list-style-type: none;
   padding: 0;
 float: right;
 }
 
-#social-media li {
+.social-media li {
   margin-bottom: 5px;
   float: left;
   margin-left: 20px;
@@ -440,11 +428,11 @@ float: right;
   margin-bottom: 80px;
 }
 
-#social-media a {
+.social-media a {
   text-decoration: none;
 }
 
-#social-media a:hover {
+.social-media a:hover {
   text-decoration: underline;
 }
 
